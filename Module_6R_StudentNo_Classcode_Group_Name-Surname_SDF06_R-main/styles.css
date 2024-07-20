@@ -34,3 +34,49 @@ img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px;
 }
+
+.profile-image img {
+    grid-row: 1 / 1 ;
+    grid-column: 1 / 1;
+    border: 5px solid #00800023;
+    border-radius: 50%;
+    margin-right: 20px;
+    left:0;
+    width: 155px;
+    height: 150px;
+}
+
+.profile-user-settings {
+    grid-column: 2 / 3;
+    display: flex;
+    padding: 2px 20px;
+    height: 40px;
+    margin-right: auto;
+}
+
+.profile-stats {
+    grid-column: 2 / 3;
+    list-style: none;
+
+}
+
+.profile-bio {
+    grid-column: 2 / 3;
+    display: flex;
+}
+
+.profile-edit-btn {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.profile-settings-btn {
+    margin-right: 10px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
