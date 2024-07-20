@@ -21,3 +21,16 @@ body {
 img {
     display: block;
 }
+
+/*-----------Header-Section---------*/
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
+}
