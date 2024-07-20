@@ -35,6 +35,10 @@ img {
     grid-template-rows: 100px;
 }
 
+.profile-user-name{
+    margin-right: 10px;
+}
+
 .profile-image img {
     grid-row: 1 / 1 ;
     grid-column: 1 / 1;
@@ -67,15 +71,18 @@ img {
 
 .profile-edit-btn {
     margin-right: 10px;
+    align-items: center;
     cursor: pointer;
 }
 .profile-settings-btn {
     margin-right: 10px;
+    margin-left: 10px;
+    align-items: center;
     padding: 20px;
     cursor: pointer;
 }
 
-.ul {
+ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -96,4 +103,58 @@ img {
     width: 100%;
     gap: 2rem;
     margin: 0;
+}
+
+.gallery-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.gallery-item-info {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 10px;
+    padding: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: bisque;
+    
+}
+
+.gallery-item-type {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+}
+
+.gallery-item-likes {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.gallery-item-comments {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+   overflow: hidden;
+    display: flex;
+    
+    
 }
