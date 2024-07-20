@@ -80,3 +80,20 @@ img {
     justify-content: space-between;
     list-style: none;
 }
+
+/*-------Main-Section----------*/
+
+.even-columns {
+    display: flex;
+}
+.even-columns > *{
+    width: 100%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    width: 100%;
+    gap: 2rem;
+    margin: 0;
+}
