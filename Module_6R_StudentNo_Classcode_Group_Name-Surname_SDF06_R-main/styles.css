@@ -115,6 +115,7 @@ img {
     grid-template-columns: repeat(3, minmax(150px, 1fr));
     width: 100%;
     gap: 1rem;
+    max-width: 1280px;
     margin: 0;
 }
 
@@ -137,7 +138,7 @@ img {
     right: 10px;
     padding: 10px;
     position: absolute;
-    color: bisque;
+    color: #cf1c1c;
     display: none;
     
 }
@@ -171,6 +172,7 @@ img {
     padding: 0;
       
 }
+
 .loader {
 margin: 20px auto;
 width: 50px;
@@ -201,10 +203,26 @@ animation: round 1s linear infinite;
     position: absolute;
     background-color: rgba(0, 0, 1, -3);
 }
-/*.gallery-item:focus .gallery-item-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    background-color: rgba(0, 0, 0, -2);
-}*/
+
+@media screen and (max-width: 60em) {
+    .profile {
+        display: flex;
+        flex-wrap:wrap ;
+    }
+    .profile::after {
+        display: none;
+    }
+    .profile-image{
+        float: none;
+    }
+    .profile-user-settings {
+        float: none;
+    }
+    .profile-stats {
+        float: none;
+    }
+    .profile-bio {
+        float: none;
+    }
+}
+    
