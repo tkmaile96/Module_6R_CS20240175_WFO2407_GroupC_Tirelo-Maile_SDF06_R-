@@ -181,3 +181,20 @@ animation: round 1s linear infinite;
         transform: rotate(360deg);
     }
 }
+
+/*------Hover-Effects-----*/
+
+.gallery-item:hover .gallery-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, -2);
+}
+.gallery-item:focus .gallery-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, -2);
+}
