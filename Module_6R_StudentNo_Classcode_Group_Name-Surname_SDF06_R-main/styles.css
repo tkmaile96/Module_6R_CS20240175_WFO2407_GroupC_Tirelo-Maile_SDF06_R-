@@ -25,67 +25,72 @@ img {
 /*-----------Header-Section---------*/
 
 .container {
-    width: 100%;
+    width: 450px;
     margin: 0 auto;
+    padding: 0 32px;
 }
-
-.profile {
+.profile{
+    padding: 80px;
+}
+.profile::after{
+    content: "";
+    display: block;
+}
+/*.profile {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px;
-}
+}*/
 
 .profile-user-name{
-    margin-right: 10px;
+    display: inline-block;
+}
+.profile-image {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
 }
 
 .profile-image img {
-    grid-row: 1 / 1 ;
-    grid-column: 1 / 1;
     border: 5px solid #00800023;
     border-radius: 50%;
-    margin-right: 20px;
-    left:0;
     width: 155px;
     height: 150px;
 }
 
 .profile-user-settings {
-    grid-column: 2 / 3;
-    display: flex;
-    padding: 2px 20px;
-    height: 40px;
-    margin-right: auto;
+   float: left;
+   
 }
 
 .profile-stats {
-    grid-column: 2 / 3;
-    list-style: none;
-
+    float: left;
+   
+}
+.profile-stats li {
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .profile-bio {
-    grid-column: 2 / 3;
-    display: flex;
+  float: right;
 }
-
+.btn{
+    display: inline-block;
+    border: 1px solid #262626;
+    all: unset;
+    cursor: pointer;
+}
 .profile-edit-btn {
     margin-right: 10px;
-    align-items: center;
-    cursor: pointer;
+    
 }
 .profile-settings-btn {
-    margin-right: 10px;
+    font-size: larger;
     margin-left: 10px;
-    align-items: center;
-    padding: 20px;
-    cursor: pointer;
-}
-
-ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+   
 }
 
 /*-------Main-Section----------*/
@@ -155,6 +160,8 @@ ul {
     height: 3px;
    overflow: hidden;
     display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
     
     
 }
