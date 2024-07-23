@@ -174,9 +174,9 @@ img {
 }
 
 .loader {
-margin: 20px auto;
-width: 50px;
-height: 50px;
+margin: 10px auto;
+width: 20px;
+height: 20px;
 border: 5px solid #e8aa6c;
 border-top: 5px solid #000;
 border-radius: 50%;
@@ -204,25 +204,54 @@ animation: round 1s linear infinite;
     background-color: rgba(0, 0, 1, -3);
 }
 
-@media screen and (max-width: 60em) {
+@media only screen and (max-width:599px) { 
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
     .profile {
         display: flex;
         flex-wrap:wrap ;
     }
-    .profile::after {
-        display: none;
-    }
-    .profile-image{
-        float: none;
+   .container{
+    width: 100%;
+    padding: 0 16px;
+   }
+    .profile-image img{
+        height: 100px;
+        width: 100px;
     }
     .profile-user-settings {
         float: none;
+        width: 100%;
+        text-align: center;
     }
     .profile-stats {
         float: none;
+        width: 100%;
+        text-align: center;
     }
     .profile-bio {
         float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .profile-image {
+        width: 100%;
+        margin-right: 0;
+        justify-content: center;
+    }
+    .profile-edit-btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .profile-settings-btn {
+        width: 100%;
+        padding: 9px 0;
+    }
+    .gallery-item {
+        margin-bottom: 5px;
     }
 }
     
